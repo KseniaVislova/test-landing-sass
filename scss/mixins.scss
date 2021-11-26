@@ -1,0 +1,23 @@
+@mixin font($fontWeight, $fontSize, $lineHeight) {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin  flex($justify, $align, $direction, $wrap){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin padding($values...) {
+  padding: $values;
+}
+
+@mixin margin($values...) {
+  margin: $values;
+}
